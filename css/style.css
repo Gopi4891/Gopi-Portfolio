@@ -1087,13 +1087,14 @@ body {
 }
 
 .section-title {
+    color: #f3970e;
     font-size: 2.5rem;
     margin-bottom: 10px;
     text-align: center;
 }
 
 .section-subtitle {
-    color: #b8c7e0;
+    color: #4b4b4a;
     text-align: center;
     margin-bottom: 45px;
 }
@@ -1324,3 +1325,22 @@ body {
     transform: translateY(-4px);
     background: #70d0ff;
 }
+.floating-icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0; /* behind hero content */
+}
+
+.icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    opacity: 0.1; /* subtle */
+    animation: float 20s linear infinite;
+}
+
