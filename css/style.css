@@ -1343,4 +1343,29 @@ body {
     opacity: 0.1; /* subtle */
     animation: float 20s linear infinite;
 }
+/* Base styles (for desktop) */
+.section-title {
+    font-size: 2rem;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+    .section-title {
+        font-size: 1.7rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr; /* Projects stacked vertically */
+        gap: 1.5rem;
+    }
+}
+
 
