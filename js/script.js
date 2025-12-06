@@ -527,14 +527,4 @@ backToTop.addEventListener("click", () => {
         behavior: "smooth"
     });
 });
-// page unload aaga scroll position save panna
-window.addEventListener('beforeunload', () => {
-    sessionStorage.setItem('scrollPosition', window.scrollY);
-});
-// page load aana scroll restore panna
-window.addEventListener('load', () => {
-    const scrollY = sessionStorage.getItem('scrollPosition');
-    if (scrollY) {
-        window.scrollTo(0, parseInt(scrollY));
-    }
-});
+
